@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block headtitle %}About - {{PORTAL_NAME}}{% endblock headtitle %}
+
+{% block headermeta %}
+
+<meta property="og:title" content="About - {{PORTAL_NAME}}">
+<meta property="og:type" content="website">
+<meta property="og:description" content="">
+
+<meta name="twitter:card" content="summary">
+
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [{
+		"@type": "ListItem",
+		"position": 1,
+        "name": "{{PORTAL_NAME}}",
+        "item": {
+			"@type": "WebPage",
+	        "@id": "{{FRONTEND_HOST}}"
+	    }
+    },
+    {
+		"@type": "ListItem",
+		"position": 2,
+        "name": "About",
+        "item": {
+			"@type": "AboutPage",
+	        "@id": "{{FRONTEND_HOST}}/about"
+	    }
+    }]
+}
+</script>
+
+{% endblock headermeta %}
+
+{% block innercontent %}
+<div class="custom-page-wrapper">
+	<h2>About</h2>
+	<hr/>
+	
+    <p><a href="biites.com">Biites</a> Biites is the next generation video and 
+		analytics platform. Built from the ground up with transparency and quality as standard, 
+		we utilise 1st party data coupled with a best-in-class AI to enhance the user experience, 
+		drive deeper brand engagement and create unrivalled performance withinin video distribution.</p>
+</div>
+{% endblock %}
