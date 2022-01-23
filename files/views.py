@@ -77,6 +77,7 @@ firehose = boto3.client('firehose',
                         region_name='eu-central-1')
 
 VALID_USER_ACTIONS = [action for action, name in USER_MEDIA_ACTIONS]
+print('test')
 
 
 def about(request):

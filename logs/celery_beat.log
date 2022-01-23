@@ -1,0 +1,4 @@
+[2022-01-23 16:36:51,375: INFO/MainProcess] beat: Starting...
+[2022-01-23 16:36:51,454: INFO/MainProcess] Scheduler: Sending due task get_list_of_popular_media (get_list_of_popular_media)
+[2022-01-23 16:36:51,480: INFO/MainProcess] Scheduler: Sending due task clear_sessions (clear_sessions)
+[2022-01-23 16:36:51,483: INFO/MainProcess] Scheduler: Sending due task update_listings_thumbnails (update_listings_thumbnails)

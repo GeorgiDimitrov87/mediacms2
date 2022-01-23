@@ -1,0 +1,30 @@
+[2022-01-23 16:37:06,044: INFO/MainProcess] Connected to redis://redis:6379/1
+[2022-01-23 16:37:06,091: INFO/MainProcess] mingle: searching for neighbors
+[2022-01-23 16:37:07,227: INFO/MainProcess] mingle: all alone
+[2022-01-23 16:37:07,385: INFO/MainProcess] long1@2377a08c294f ready.
+[2022-01-23 16:37:07,541: INFO/MainProcess] Received task: get_list_of_popular_media[9c0ed820-142f-4f50-bbe8-6da0ac1c3d0e]  
+[2022-01-23 16:37:07,559: INFO/MainProcess] Received task: update_listings_thumbnails[49860225-6c80-4d24-baa5-0deacaa87181]  
+[2022-01-23 16:37:07,700: INFO/ForkPoolWorker-3] get_list_of_popular_media[9c0ed820-142f-4f50-bbe8-6da0ac1c3d0e]: saved popular media ids
+[2022-01-23 16:37:07,723: INFO/ForkPoolWorker-3] Task get_list_of_popular_media[9c0ed820-142f-4f50-bbe8-6da0ac1c3d0e] succeeded in 0.1631019849992299s: True
+[2022-01-23 16:37:07,734: INFO/ForkPoolWorker-1] update_listings_thumbnails[49860225-6c80-4d24-baa5-0deacaa87181]: updated 0 categories
+[2022-01-23 16:37:07,742: INFO/ForkPoolWorker-1] update_listings_thumbnails[49860225-6c80-4d24-baa5-0deacaa87181]: updated 0 tags
+[2022-01-23 16:37:07,759: INFO/ForkPoolWorker-1] Task update_listings_thumbnails[49860225-6c80-4d24-baa5-0deacaa87181] succeeded in 0.17832274000102188s: True
+[2022-01-23 16:37:10,112: INFO/MainProcess] sync with short2@2377a08c294f
+[2022-01-23 17:16:24,159: INFO/MainProcess] Received task: produce_sprite_from_video[0564048d-91da-4c48-805d-9305285ead72]  
+[2022-01-23 17:16:24,179: INFO/MainProcess] Received task: encode_media[a7f5c238-44d0-42a2-af42-7e9d14663319]  
+[2022-01-23 17:16:24,181: INFO/ForkPoolWorker-1] encode_media[a7f5c238-44d0-42a2-af42-7e9d14663319]: Encode Media started, friendly token dZvgzTvqU, profile id 2, force True
+[2022-01-23 17:16:24,214: INFO/MainProcess] Received task: encode_media[cf1a7e29-f3c0-4ec6-9651-efdbd38e210e]  
+[2022-01-23 17:16:24,215: INFO/ForkPoolWorker-4] encode_media[cf1a7e29-f3c0-4ec6-9651-efdbd38e210e]: Encode Media started, friendly token dZvgzTvqU, profile id 3, force True
+[2022-01-23 17:16:24,240: INFO/MainProcess] Received task: encode_media[3bd5e6c4-baf0-443f-a28b-5c4fa65d1c77]  
+[2022-01-23 17:16:24,259: INFO/MainProcess] Received task: encode_media[f15f2159-177d-42ff-aad4-df6c46f0ef60]  
+[2022-01-23 17:16:24,276: INFO/ForkPoolWorker-2] encode_media[3bd5e6c4-baf0-443f-a28b-5c4fa65d1c77]: Encode Media started, friendly token dZvgzTvqU, profile id 13, force True
+[2022-01-23 17:16:26,012: INFO/ForkPoolWorker-1] encode_media[a7f5c238-44d0-42a2-af42-7e9d14663319]: Saved 2.94
+[2022-01-23 17:16:26,176: INFO/ForkPoolWorker-4] encode_media[cf1a7e29-f3c0-4ec6-9651-efdbd38e210e]: Saved 2.94
+[2022-01-23 17:16:26,854: INFO/ForkPoolWorker-2] encode_media[3bd5e6c4-baf0-443f-a28b-5c4fa65d1c77]: Saved 2.94
+[2022-01-23 17:16:29,845: INFO/ForkPoolWorker-3] Task produce_sprite_from_video[0564048d-91da-4c48-805d-9305285ead72] succeeded in 5.6849968189999345s: True
+[2022-01-23 17:16:29,850: INFO/ForkPoolWorker-3] encode_media[f15f2159-177d-42ff-aad4-df6c46f0ef60]: Encode Media started, friendly token dZvgzTvqU, profile id 1, force True
+[2022-01-23 17:16:39,256: INFO/ForkPoolWorker-3] Task encode_media[f15f2159-177d-42ff-aad4-df6c46f0ef60] succeeded in 9.40693758800262s: True
+[2022-01-23 17:16:47,135: INFO/ForkPoolWorker-1] Task encode_media[a7f5c238-44d0-42a2-af42-7e9d14663319] succeeded in 22.954141860001982s: True
+[2022-01-23 17:16:56,744: INFO/ForkPoolWorker-4] Task encode_media[cf1a7e29-f3c0-4ec6-9651-efdbd38e210e] succeeded in 32.52829559500242s: True
+[2022-01-23 17:16:58,822: INFO/ForkPoolWorker-2] encode_media[3bd5e6c4-baf0-443f-a28b-5c4fa65d1c77]: Saved 82.35
+[2022-01-23 17:17:02,512: INFO/ForkPoolWorker-2] Task encode_media[3bd5e6c4-baf0-443f-a28b-5c4fa65d1c77] succeeded in 38.23648601000241s: True

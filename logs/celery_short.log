@@ -1,0 +1,178 @@
+[2022-01-23 16:37:07,151: INFO/MainProcess] Connected to redis://redis:6379/1
+[2022-01-23 16:37:07,207: INFO/MainProcess] mingle: searching for neighbors
+[2022-01-23 16:37:08,296: INFO/MainProcess] mingle: all alone
+[2022-01-23 16:37:08,378: INFO/MainProcess] short1@2377a08c294f ready.
+[2022-01-23 16:37:08,488: INFO/MainProcess] Received task: clear_sessions[85310d1f-2d0b-408c-947c-107be6feb7a5]  
+[2022-01-23 16:37:08,508: INFO/ForkPoolWorker-7] Task clear_sessions[85310d1f-2d0b-408c-947c-107be6feb7a5] succeeded in 0.017608672998903785s: True
+[2022-01-23 16:37:10,046: INFO/MainProcess] Connected to redis://redis:6379/1
+[2022-01-23 16:37:10,079: INFO/MainProcess] mingle: searching for neighbors
+[2022-01-23 16:37:10,110: INFO/MainProcess] sync with short2@2377a08c294f
+[2022-01-23 16:37:11,130: INFO/MainProcess] mingle: sync with 2 nodes
+[2022-01-23 16:37:11,130: INFO/MainProcess] mingle: sync complete
+[2022-01-23 16:37:11,176: INFO/MainProcess] short2@2377a08c294f ready.
+[2022-01-23 17:16:07,975: INFO/MainProcess] Received task: djcelery_email_send_multiple[b1b66676-af68-48ac-bbcf-a60d462c7022]  
+[2022-01-23 17:16:07,980: INFO/MainProcess] Received task: djcelery_email_send_multiple[dc5968cf-5b6b-4c95-a3bb-48cf77e939f1]  
+[2022-01-23 17:16:08,392: ERROR/ForkPoolWorker-7] djcelery_email_send_multiple[dc5968cf-5b6b-4c95-a3bb-48cf77e939f1]: Cannot reach CELERY_EMAIL_BACKEND django.core.mail.backends.smtp.EmailBackend
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/djcelery_email/tasks.py", line 40, in send_emails
+    conn.open()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/local/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/local/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2022-01-23 17:16:08,392: ERROR/ForkPoolWorker-7] djcelery_email_send_multiple[b1b66676-af68-48ac-bbcf-a60d462c7022]: Cannot reach CELERY_EMAIL_BACKEND django.core.mail.backends.smtp.EmailBackend
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/djcelery_email/tasks.py", line 40, in send_emails
+    conn.open()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/local/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/local/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2022-01-23 17:16:08,597: WARNING/ForkPoolWorker-7] djcelery_email_send_multiple[dc5968cf-5b6b-4c95-a3bb-48cf77e939f1]: Failed to send email message to ['gdimitrovau@gmail.com'], retrying. (ConnectionRefusedError(111, 'Connection refused'))
+[2022-01-23 17:16:08,597: WARNING/ForkPoolWorker-7] djcelery_email_send_multiple[b1b66676-af68-48ac-bbcf-a60d462c7022]: Failed to send email message to ['info@mediacms.io'], retrying. (ConnectionRefusedError(111, 'Connection refused'))
+[2022-01-23 17:16:08,692: INFO/ForkPoolWorker-7] Task djcelery_email_send_multiple[dc5968cf-5b6b-4c95-a3bb-48cf77e939f1] succeeded in 0.710205108000082s: 0
+[2022-01-23 17:16:08,697: INFO/MainProcess] Received task: djcelery_email_send_multiple[dc5968cf-5b6b-4c95-a3bb-48cf77e939f1]  ETA:[2022-01-23 17:19:08.599225+00:00] 
+[2022-01-23 17:16:08,715: INFO/ForkPoolWorker-7] Task djcelery_email_send_multiple[b1b66676-af68-48ac-bbcf-a60d462c7022] succeeded in 0.7365933159999258s: 0
+[2022-01-23 17:16:08,716: INFO/MainProcess] Received task: djcelery_email_send_multiple[b1b66676-af68-48ac-bbcf-a60d462c7022]  ETA:[2022-01-23 17:19:08.599338+00:00] 
+[2022-01-23 17:16:24,275: INFO/MainProcess] Received task: djcelery_email_send_multiple[a241caf1-88f0-4cda-895d-a7c108cdb6d8]  
+[2022-01-23 17:16:24,283: INFO/MainProcess] Received task: djcelery_email_send_multiple[0e2af103-9820-4cef-8d73-ffde5fa678b1]  
+[2022-01-23 17:16:24,346: ERROR/ForkPoolWorker-7] djcelery_email_send_multiple[a241caf1-88f0-4cda-895d-a7c108cdb6d8]: Cannot reach CELERY_EMAIL_BACKEND django.core.mail.backends.smtp.EmailBackend
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/djcelery_email/tasks.py", line 40, in send_emails
+    conn.open()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/local/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/local/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2022-01-23 17:16:24,345: ERROR/ForkPoolWorker-7] djcelery_email_send_multiple[0e2af103-9820-4cef-8d73-ffde5fa678b1]: Cannot reach CELERY_EMAIL_BACKEND django.core.mail.backends.smtp.EmailBackend
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/djcelery_email/tasks.py", line 40, in send_emails
+    conn.open()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/local/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/local/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2022-01-23 17:16:24,414: WARNING/ForkPoolWorker-7] djcelery_email_send_multiple[a241caf1-88f0-4cda-895d-a7c108cdb6d8]: Failed to send email message to ['info@mediacms.io'], retrying. (ConnectionRefusedError(111, 'Connection refused'))
+[2022-01-23 17:16:24,430: WARNING/ForkPoolWorker-7] djcelery_email_send_multiple[0e2af103-9820-4cef-8d73-ffde5fa678b1]: Failed to send email message to ['gdimitrovau@gmail.com'], retrying. (ConnectionRefusedError(111, 'Connection refused'))
+[2022-01-23 17:16:24,432: INFO/ForkPoolWorker-7] Task djcelery_email_send_multiple[a241caf1-88f0-4cda-895d-a7c108cdb6d8] succeeded in 0.13675682000030065s: 0
+[2022-01-23 17:16:24,444: INFO/MainProcess] Received task: djcelery_email_send_multiple[a241caf1-88f0-4cda-895d-a7c108cdb6d8]  ETA:[2022-01-23 17:19:24.416019+00:00] 
+[2022-01-23 17:16:24,446: INFO/ForkPoolWorker-7] Task djcelery_email_send_multiple[0e2af103-9820-4cef-8d73-ffde5fa678b1] succeeded in 0.15890760599722853s: 0
+[2022-01-23 17:16:24,449: INFO/MainProcess] Received task: djcelery_email_send_multiple[0e2af103-9820-4cef-8d73-ffde5fa678b1]  ETA:[2022-01-23 17:19:24.432058+00:00] 
+[2022-01-23 17:17:30,475: INFO/MainProcess] Received task: save_user_action[be6317ff-a82e-4736-995b-0532a71221d3]  
+[2022-01-23 17:17:30,575: INFO/ForkPoolWorker-7] Task save_user_action[be6317ff-a82e-4736-995b-0532a71221d3] succeeded in 0.0965644819989393s: True
+[2022-01-23 17:19:08,989: ERROR/ForkPoolWorker-7] djcelery_email_send_multiple[b1b66676-af68-48ac-bbcf-a60d462c7022]: Cannot reach CELERY_EMAIL_BACKEND django.core.mail.backends.smtp.EmailBackend
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/djcelery_email/tasks.py", line 40, in send_emails
+    conn.open()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/local/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/local/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2022-01-23 17:19:08,989: ERROR/ForkPoolWorker-7] djcelery_email_send_multiple[dc5968cf-5b6b-4c95-a3bb-48cf77e939f1]: Cannot reach CELERY_EMAIL_BACKEND django.core.mail.backends.smtp.EmailBackend
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/djcelery_email/tasks.py", line 40, in send_emails
+    conn.open()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/local/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/local/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2022-01-23 17:19:09,041: WARNING/ForkPoolWorker-7] djcelery_email_send_multiple[b1b66676-af68-48ac-bbcf-a60d462c7022]: Failed to send email message to ['info@mediacms.io'], retrying. (ConnectionRefusedError(111, 'Connection refused'))
+[2022-01-23 17:19:09,042: WARNING/ForkPoolWorker-7] djcelery_email_send_multiple[dc5968cf-5b6b-4c95-a3bb-48cf77e939f1]: Failed to send email message to ['gdimitrovau@gmail.com'], retrying. (ConnectionRefusedError(111, 'Connection refused'))
+[2022-01-23 17:19:09,049: INFO/ForkPoolWorker-7] Task djcelery_email_send_multiple[b1b66676-af68-48ac-bbcf-a60d462c7022] succeeded in 0.42044009000164806s: 0
+[2022-01-23 17:19:09,049: INFO/ForkPoolWorker-7] Task djcelery_email_send_multiple[dc5968cf-5b6b-4c95-a3bb-48cf77e939f1] succeeded in 0.4183874289992673s: 0
+[2022-01-23 17:19:09,052: INFO/MainProcess] Received task: djcelery_email_send_multiple[b1b66676-af68-48ac-bbcf-a60d462c7022]  ETA:[2022-01-23 17:22:09.043727+00:00] 
+[2022-01-23 17:19:09,052: INFO/MainProcess] Received task: djcelery_email_send_multiple[dc5968cf-5b6b-4c95-a3bb-48cf77e939f1]  ETA:[2022-01-23 17:22:09.043565+00:00] 
+[2022-01-23 17:19:24,758: ERROR/ForkPoolWorker-7] djcelery_email_send_multiple[0e2af103-9820-4cef-8d73-ffde5fa678b1]: Cannot reach CELERY_EMAIL_BACKEND django.core.mail.backends.smtp.EmailBackend
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/djcelery_email/tasks.py", line 40, in send_emails
+    conn.open()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/local/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/local/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2022-01-23 17:19:24,767: ERROR/ForkPoolWorker-7] djcelery_email_send_multiple[a241caf1-88f0-4cda-895d-a7c108cdb6d8]: Cannot reach CELERY_EMAIL_BACKEND django.core.mail.backends.smtp.EmailBackend
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/djcelery_email/tasks.py", line 40, in send_emails
+    conn.open()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/local/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/local/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2022-01-23 17:19:24,995: WARNING/ForkPoolWorker-7] djcelery_email_send_multiple[0e2af103-9820-4cef-8d73-ffde5fa678b1]: Failed to send email message to ['gdimitrovau@gmail.com'], retrying. (ConnectionRefusedError(111, 'Connection refused'))
+[2022-01-23 17:19:24,995: WARNING/ForkPoolWorker-7] djcelery_email_send_multiple[a241caf1-88f0-4cda-895d-a7c108cdb6d8]: Failed to send email message to ['info@mediacms.io'], retrying. (ConnectionRefusedError(111, 'Connection refused'))
+[2022-01-23 17:19:25,003: INFO/ForkPoolWorker-7] Task djcelery_email_send_multiple[0e2af103-9820-4cef-8d73-ffde5fa678b1] succeeded in 0.3432199739982025s: 0
+[2022-01-23 17:19:25,003: INFO/ForkPoolWorker-7] Task djcelery_email_send_multiple[a241caf1-88f0-4cda-895d-a7c108cdb6d8] succeeded in 0.3397643179996521s: 0
+[2022-01-23 17:19:25,006: INFO/MainProcess] Received task: djcelery_email_send_multiple[0e2af103-9820-4cef-8d73-ffde5fa678b1]  ETA:[2022-01-23 17:22:24.997268+00:00] 
+[2022-01-23 17:19:25,006: INFO/MainProcess] Received task: djcelery_email_send_multiple[a241caf1-88f0-4cda-895d-a7c108cdb6d8]  ETA:[2022-01-23 17:22:24.997268+00:00] 
