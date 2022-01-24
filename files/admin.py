@@ -9,6 +9,7 @@ from .models import (
     Media,
     Subtitle,
     Tag,
+    Cat
 )
 
 
@@ -85,3 +86,4 @@ admin.site.register(Category, CategoryAdmin)
 admin.site.register(Tag, TagAdmin)
 admin.site.register(Subtitle, SubtitleAdmin)
 admin.site.register(Language, LanguageAdmin)
+admin.site.register(Cat)

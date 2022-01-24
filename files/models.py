@@ -115,6 +115,14 @@ def category_thumb_path(instance, filename):
     return settings.MEDIA_UPLOAD_DIR + "categories/{0}".format(file_name)
 
 
+class Cat(models.Model):
+    name = models.CharField(max_length=30)
+    uid = models.UUIDField(unique=True, default=uuid.uuid4, help_text="A unique identifier for the Media")
+    user = models.ForeignKey("users.User", on_delete=models.CASCADE, help_text="user that uploads the media")
+    picture = models.FileField(upload_to=original_media_file_path)
+
+
+
 class Media(models.Model):
     """The most important model for MediaCMS"""
 
@@ -122,7 +130,7 @@ class Media(models.Model):
 
     allow_download = models.BooleanField(default=True, help_text="Whether option to download media is shown")
 
-    category = models.ManyToManyField("Category", blank=True, help_text="Media can be part of one or more categories")
+    category = models.ManyToManyField("Category", blank=True, default='SOME STRING', help_text="Media can be part of one or more categories")
 
     channel = models.ForeignKey(
         "users.Channel",

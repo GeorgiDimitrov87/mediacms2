@@ -28,3 +28,100 @@
 [2022-01-23 17:16:56,744: INFO/ForkPoolWorker-4] Task encode_media[cf1a7e29-f3c0-4ec6-9651-efdbd38e210e] succeeded in 32.52829559500242s: True
 [2022-01-23 17:16:58,822: INFO/ForkPoolWorker-2] encode_media[3bd5e6c4-baf0-443f-a28b-5c4fa65d1c77]: Saved 82.35
 [2022-01-23 17:17:02,512: INFO/ForkPoolWorker-2] Task encode_media[3bd5e6c4-baf0-443f-a28b-5c4fa65d1c77] succeeded in 38.23648601000241s: True
+[2022-01-23 20:01:00,098: INFO/MainProcess] Received task: get_list_of_popular_media[2626f9ef-04a4-4d33-9a2c-821d9d73cf33]  
+[2022-01-23 20:01:00,123: WARNING/ForkPoolWorker-3] /home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1367: RuntimeWarning: DateTimeField MediaAction.action_date received a naive datetime (2022-01-16 20:01:00.102119) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+[2022-01-23 20:01:00,169: WARNING/ForkPoolWorker-3] /home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1367: RuntimeWarning: DateTimeField MediaAction.action_date received a naive datetime (2021-07-27 20:01:00.102149) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+[2022-01-23 20:01:00,170: INFO/ForkPoolWorker-3] get_list_of_popular_media[2626f9ef-04a4-4d33-9a2c-821d9d73cf33]: saved popular media ids
+[2022-01-23 20:01:00,171: INFO/ForkPoolWorker-3] Task get_list_of_popular_media[2626f9ef-04a4-4d33-9a2c-821d9d73cf33] succeeded in 0.07105202099774033s: True
+[2022-01-24 08:21:10,503: INFO/MainProcess] Connected to redis://redis:6379/1
+[2022-01-24 08:21:10,511: INFO/MainProcess] mingle: searching for neighbors
+[2022-01-24 08:21:11,537: INFO/MainProcess] mingle: all alone
+[2022-01-24 08:21:11,577: INFO/MainProcess] long1@547276bc1215 ready.
+[2022-01-24 08:21:11,610: INFO/MainProcess] Received task: get_list_of_popular_media[7ab82cf2-2157-4b64-9009-c9d891146a6e]  
+[2022-01-24 08:21:11,612: INFO/MainProcess] Received task: update_listings_thumbnails[34a23b6d-bd5c-4e7a-9652-a839fc0eebcb]  
+[2022-01-24 08:21:11,626: WARNING/ForkPoolWorker-3] /home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1367: RuntimeWarning: DateTimeField MediaAction.action_date received a naive datetime (2022-01-17 08:21:11.614672) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+[2022-01-24 08:21:11,655: INFO/ForkPoolWorker-1] update_listings_thumbnails[34a23b6d-bd5c-4e7a-9652-a839fc0eebcb]: updated 0 categories
+[2022-01-24 08:21:11,658: INFO/ForkPoolWorker-1] update_listings_thumbnails[34a23b6d-bd5c-4e7a-9652-a839fc0eebcb]: updated 0 tags
+[2022-01-24 08:21:11,660: INFO/ForkPoolWorker-1] Task update_listings_thumbnails[34a23b6d-bd5c-4e7a-9652-a839fc0eebcb] succeeded in 0.04787405000001854s: True
+[2022-01-24 08:21:11,662: WARNING/ForkPoolWorker-3] /home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1367: RuntimeWarning: DateTimeField MediaAction.action_date received a naive datetime (2021-07-28 08:21:11.614689) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+[2022-01-24 08:21:11,669: INFO/ForkPoolWorker-3] get_list_of_popular_media[7ab82cf2-2157-4b64-9009-c9d891146a6e]: saved popular media ids
+[2022-01-24 08:21:11,671: INFO/ForkPoolWorker-3] Task get_list_of_popular_media[7ab82cf2-2157-4b64-9009-c9d891146a6e] succeeded in 0.058711438000045746s: True
+[2022-01-24 08:44:35,084: INFO/MainProcess] Connected to redis://redis:6379/1
+[2022-01-24 08:44:35,093: INFO/MainProcess] mingle: searching for neighbors
+[2022-01-24 08:44:36,127: INFO/MainProcess] mingle: all alone
+[2022-01-24 08:44:36,166: INFO/MainProcess] long1@6b476720a408 ready.
+[2022-01-24 10:01:00,199: INFO/MainProcess] Received task: get_list_of_popular_media[c4ffaa87-7535-44be-986e-38b6a36876b6]  
+[2022-01-24 10:01:00,218: WARNING/ForkPoolWorker-3] /home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1367: RuntimeWarning: DateTimeField MediaAction.action_date received a naive datetime (2022-01-17 10:01:00.204725) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+[2022-01-24 10:01:00,254: WARNING/ForkPoolWorker-3] /home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1367: RuntimeWarning: DateTimeField MediaAction.action_date received a naive datetime (2021-07-28 10:01:00.204747) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+[2022-01-24 10:01:00,277: INFO/ForkPoolWorker-3] get_list_of_popular_media[c4ffaa87-7535-44be-986e-38b6a36876b6]: saved popular media ids
+[2022-01-24 10:01:00,282: INFO/ForkPoolWorker-3] Task get_list_of_popular_media[c4ffaa87-7535-44be-986e-38b6a36876b6] succeeded in 0.08005963599953247s: True
+[2022-01-24 12:29:34,516: INFO/MainProcess] Connected to redis://redis:6379/1
+[2022-01-24 12:29:34,532: INFO/MainProcess] mingle: searching for neighbors
+[2022-01-24 12:29:35,575: INFO/MainProcess] mingle: all alone
+[2022-01-24 12:29:35,598: INFO/MainProcess] long1@6b476720a408 ready.
+[2022-01-24 12:29:37,071: INFO/MainProcess] sync with short2@6b476720a408
+[2022-01-24 12:42:33,289: INFO/MainProcess] Connected to redis://redis:6379/1
+[2022-01-24 12:42:33,303: INFO/MainProcess] mingle: searching for neighbors
+[2022-01-24 12:42:34,335: INFO/MainProcess] mingle: all alone
+[2022-01-24 12:42:34,359: INFO/MainProcess] long1@52ce5ed12bfd ready.
+[2022-01-24 12:42:34,446: INFO/MainProcess] sync with short1@52ce5ed12bfd
+[2022-01-24 12:42:35,524: INFO/MainProcess] sync with short2@52ce5ed12bfd
+[2022-01-24 14:22:29,226: INFO/MainProcess] Received task: produce_sprite_from_video[457bdc41-8822-40e2-bc08-e7f2ec75a63d]  
+[2022-01-24 14:22:29,229: INFO/MainProcess] Received task: encode_media[b9927229-4b11-4e57-b471-3a96bcefba58]  
+[2022-01-24 14:22:29,242: INFO/ForkPoolWorker-1] encode_media[b9927229-4b11-4e57-b471-3a96bcefba58]: Encode Media started, friendly token IqWyUQs2D, profile id 13, force True
+[2022-01-24 14:22:29,261: INFO/MainProcess] Received task: encode_media[3047bf92-f31c-48e8-b9ee-2d2944256ef4]  
+[2022-01-24 14:22:29,278: INFO/MainProcess] Received task: encode_media[d0c4d7d6-b13f-4a94-ac2e-58b36e9942ce]  
+[2022-01-24 14:22:29,279: INFO/ForkPoolWorker-4] encode_media[3047bf92-f31c-48e8-b9ee-2d2944256ef4]: Encode Media started, friendly token IqWyUQs2D, profile id 10, force True
+[2022-01-24 14:22:29,300: INFO/ForkPoolWorker-2] encode_media[d0c4d7d6-b13f-4a94-ac2e-58b36e9942ce]: Encode Media started, friendly token IqWyUQs2D, profile id 7, force True
+[2022-01-24 14:22:29,316: INFO/MainProcess] Received task: encode_media[549f38bb-33ba-4dba-b816-482f2aa9a7e3]  
+[2022-01-24 14:22:29,358: INFO/MainProcess] Received task: encode_media[1b88be81-b570-4613-a20d-b667831b8923]  
+[2022-01-24 14:22:29,363: INFO/MainProcess] Received task: encode_media[f2069f03-00c7-429a-8cec-6668d9594215]  
+[2022-01-24 14:22:31,467: INFO/ForkPoolWorker-1] encode_media[b9927229-4b11-4e57-b471-3a96bcefba58]: Saved 16.67
+[2022-01-24 14:22:32,254: INFO/ForkPoolWorker-3] Task produce_sprite_from_video[457bdc41-8822-40e2-bc08-e7f2ec75a63d] succeeded in 3.023974769999768s: True
+[2022-01-24 14:22:32,261: INFO/ForkPoolWorker-4] encode_media[3047bf92-f31c-48e8-b9ee-2d2944256ef4]: Saved 16.67
+[2022-01-24 14:22:32,265: INFO/ForkPoolWorker-3] encode_media[549f38bb-33ba-4dba-b816-482f2aa9a7e3]: Encode Media started, friendly token IqWyUQs2D, profile id 1, force True
+[2022-01-24 14:22:33,335: INFO/ForkPoolWorker-2] encode_media[d0c4d7d6-b13f-4a94-ac2e-58b36e9942ce]: Saved 16.67
+[2022-01-24 14:22:36,216: INFO/ForkPoolWorker-3] Task encode_media[549f38bb-33ba-4dba-b816-482f2aa9a7e3] succeeded in 3.951143870002852s: True
+[2022-01-24 14:22:36,225: INFO/ForkPoolWorker-3] encode_media[1b88be81-b570-4613-a20d-b667831b8923]: Encode Media started, friendly token IqWyUQs2D, profile id 2, force True
+[2022-01-24 14:22:38,265: INFO/ForkPoolWorker-3] encode_media[1b88be81-b570-4613-a20d-b667831b8923]: Saved 16.67
+[2022-01-24 14:22:46,053: INFO/ForkPoolWorker-3] Task encode_media[1b88be81-b570-4613-a20d-b667831b8923] succeeded in 9.827998674998526s: True
+[2022-01-24 14:22:46,058: INFO/ForkPoolWorker-3] encode_media[f2069f03-00c7-429a-8cec-6668d9594215]: Encode Media started, friendly token IqWyUQs2D, profile id 3, force True
+[2022-01-24 14:22:47,474: INFO/ForkPoolWorker-3] encode_media[f2069f03-00c7-429a-8cec-6668d9594215]: Saved 16.67
+[2022-01-24 14:22:52,135: INFO/ForkPoolWorker-1] Task encode_media[b9927229-4b11-4e57-b471-3a96bcefba58] succeeded in 22.893373287999566s: True
+[2022-01-24 14:22:54,086: INFO/ForkPoolWorker-4] Task encode_media[3047bf92-f31c-48e8-b9ee-2d2944256ef4] succeeded in 24.806976702999236s: True
+[2022-01-24 14:22:56,818: INFO/ForkPoolWorker-3] Task encode_media[f2069f03-00c7-429a-8cec-6668d9594215] succeeded in 10.76024577499993s: True
+[2022-01-24 14:23:00,437: INFO/ForkPoolWorker-2] Task encode_media[d0c4d7d6-b13f-4a94-ac2e-58b36e9942ce] succeeded in 31.136769525997806s: True
+[2022-01-24 14:52:36,080: INFO/MainProcess] Received task: produce_sprite_from_video[e2803bdf-e669-4017-98cc-d3b2972455b3]  
+[2022-01-24 14:52:36,100: INFO/MainProcess] Received task: encode_media[fd60481e-41b6-4c6b-962d-7526f1e282df]  
+[2022-01-24 14:52:36,101: INFO/ForkPoolWorker-1] encode_media[fd60481e-41b6-4c6b-962d-7526f1e282df]: Encode Media started, friendly token MGJrDOK5I, profile id 2, force True
+[2022-01-24 14:52:36,141: INFO/MainProcess] Received task: encode_media[4dd5ccea-f74c-48bd-8769-12da87790f3c]  
+[2022-01-24 14:52:36,151: INFO/MainProcess] Received task: encode_media[d53f212b-ba49-4e69-b319-3b6f22d43929]  
+[2022-01-24 14:52:36,154: INFO/ForkPoolWorker-4] encode_media[4dd5ccea-f74c-48bd-8769-12da87790f3c]: Encode Media started, friendly token MGJrDOK5I, profile id 3, force True
+[2022-01-24 14:52:36,164: INFO/ForkPoolWorker-2] encode_media[d53f212b-ba49-4e69-b319-3b6f22d43929]: Encode Media started, friendly token MGJrDOK5I, profile id 13, force True
+[2022-01-24 14:52:36,180: INFO/MainProcess] Received task: encode_media[e2ef9366-92f8-4800-97ae-03e1880b227f]  
+[2022-01-24 14:52:36,199: INFO/MainProcess] Received task: encode_media[9a7c1a3b-c4c4-42ab-a796-fe8852b73b31]  
+[2022-01-24 14:52:36,284: INFO/MainProcess] Received task: encode_media[2af0010d-be0f-4bd1-a1c0-9aa30da28efc]  
+[2022-01-24 14:52:38,421: INFO/ForkPoolWorker-1] encode_media[fd60481e-41b6-4c6b-962d-7526f1e282df]: Saved 7.69
+[2022-01-24 14:52:38,537: INFO/ForkPoolWorker-2] encode_media[d53f212b-ba49-4e69-b319-3b6f22d43929]: Saved 7.69
+[2022-01-24 14:52:39,042: INFO/ForkPoolWorker-4] encode_media[4dd5ccea-f74c-48bd-8769-12da87790f3c]: Saved 7.69
+[2022-01-24 14:52:42,630: INFO/ForkPoolWorker-3] Task produce_sprite_from_video[e2803bdf-e669-4017-98cc-d3b2972455b3] succeeded in 6.547911233999912s: True
+[2022-01-24 14:52:42,639: INFO/ForkPoolWorker-3] encode_media[e2ef9366-92f8-4800-97ae-03e1880b227f]: Encode Media started, friendly token MGJrDOK5I, profile id 10, force True
+[2022-01-24 14:52:46,442: INFO/ForkPoolWorker-3] encode_media[e2ef9366-92f8-4800-97ae-03e1880b227f]: Saved 7.69
+[2022-01-24 14:52:59,283: INFO/ForkPoolWorker-1] Task encode_media[fd60481e-41b6-4c6b-962d-7526f1e282df] succeeded in 23.181950885002152s: True
+[2022-01-24 14:52:59,302: INFO/ForkPoolWorker-1] encode_media[9a7c1a3b-c4c4-42ab-a796-fe8852b73b31]: Encode Media started, friendly token MGJrDOK5I, profile id 7, force True
+[2022-01-24 14:53:04,761: INFO/ForkPoolWorker-1] encode_media[9a7c1a3b-c4c4-42ab-a796-fe8852b73b31]: Saved 7.69
+[2022-01-24 14:53:14,622: INFO/ForkPoolWorker-4] Task encode_media[4dd5ccea-f74c-48bd-8769-12da87790f3c] succeeded in 38.46783548899839s: True
+[2022-01-24 14:53:14,635: INFO/ForkPoolWorker-4] encode_media[2af0010d-be0f-4bd1-a1c0-9aa30da28efc]: Encode Media started, friendly token MGJrDOK5I, profile id 1, force True
+[2022-01-24 14:53:20,416: INFO/ForkPoolWorker-2] encode_media[d53f212b-ba49-4e69-b319-3b6f22d43929]: Saved 92.31
+[2022-01-24 14:53:22,061: INFO/ForkPoolWorker-4] Task encode_media[2af0010d-be0f-4bd1-a1c0-9aa30da28efc] succeeded in 7.426338979999855s: True
+[2022-01-24 14:53:28,676: INFO/ForkPoolWorker-3] encode_media[e2ef9366-92f8-4800-97ae-03e1880b227f]: Saved 84.62
+[2022-01-24 14:53:28,953: INFO/ForkPoolWorker-2] Task encode_media[d53f212b-ba49-4e69-b319-3b6f22d43929] succeeded in 52.789274535000004s: True
+[2022-01-24 14:53:36,647: INFO/ForkPoolWorker-3] Task encode_media[e2ef9366-92f8-4800-97ae-03e1880b227f] succeeded in 54.00858880300075s: True
+[2022-01-24 14:53:47,990: INFO/ForkPoolWorker-1] encode_media[9a7c1a3b-c4c4-42ab-a796-fe8852b73b31]: Saved 76.92
+[2022-01-24 14:53:53,706: INFO/ForkPoolWorker-1] Task encode_media[9a7c1a3b-c4c4-42ab-a796-fe8852b73b31] succeeded in 54.404480493001756s: True

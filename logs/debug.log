@@ -1,0 +1,539 @@
+Internal Server Error: /admin/files/cat/add/
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 933, in _do_insert
+    return manager._insert(
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1396, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1339, in as_sql
+    value_rows = [
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1291, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 308, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 87, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 323, in generate_filename
+    filename = self.upload_to(instance, filename)
+  File "/home/mediacms.io/mediacms/files/models.py", line 88, in original_media_file_path
+    file_name = "{0}.{1}".format(instance.uid.hex, helpers.get_file_name(filename))
+AttributeError: 'Cat' object has no attribute 'uid'
+Internal Server Error: /admin/files/cat/add/
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 933, in _do_insert
+    return manager._insert(
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1396, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1339, in as_sql
+    value_rows = [
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1291, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 308, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 87, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 323, in generate_filename
+    filename = self.upload_to(instance, filename)
+  File "/home/mediacms.io/mediacms/files/models.py", line 88, in original_media_file_path
+    file_name = "{0}.{1}".format(instance.uid.hex, helpers.get_file_name(filename))
+AttributeError: 'Cat' object has no attribute 'uid'
+Internal Server Error: /admin/files/media/add/
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/home/mediacms.io/mediacms/files/models.py", line 366, in save
+    self.state = helpers.get_default_state(user=self.user)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 197, in __get__
+    raise self.RelatedObjectDoesNotExist(
+files.models.Media.user.RelatedObjectDoesNotExist: Media has no user.
+Internal Server Error: /admin/files/media/add/
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/home/mediacms.io/mediacms/files/models.py", line 366, in save
+    self.state = helpers.get_default_state(user=self.user)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 197, in __get__
+    raise self.RelatedObjectDoesNotExist(
+files.models.Media.user.RelatedObjectDoesNotExist: Media has no user.
+Internal Server Error: /admin/files/media/add/
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/home/mediacms.io/mediacms/files/models.py", line 366, in save
+    self.state = helpers.get_default_state(user=self.user)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 197, in __get__
+    raise self.RelatedObjectDoesNotExist(
+files.models.Media.user.RelatedObjectDoesNotExist: Media has no user.
+Internal Server Error: /admin/files/cat/add/
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 933, in _do_insert
+    return manager._insert(
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1396, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1339, in as_sql
+    value_rows = [
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1291, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 308, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 87, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 323, in generate_filename
+    filename = self.upload_to(instance, filename)
+  File "/home/mediacms.io/mediacms/files/models.py", line 88, in original_media_file_path
+    file_name = "{0}.{1}".format(instance.uid.hex, helpers.get_file_name(filename))
+AttributeError: 'Cat' object has no attribute 'uid'
+Internal Server Error: /admin/files/cat/add/
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 933, in _do_insert
+    return manager._insert(
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1396, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1339, in as_sql
+    value_rows = [
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1291, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 308, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 87, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 323, in generate_filename
+    filename = self.upload_to(instance, filename)
+  File "/home/mediacms.io/mediacms/files/models.py", line 88, in original_media_file_path
+    file_name = "{0}.{1}".format(instance.uid.hex, helpers.get_file_name(filename))
+AttributeError: 'Cat' object has no attribute 'uid'
+Internal Server Error: /admin/files/cat/add/
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 933, in _do_insert
+    return manager._insert(
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1396, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1339, in as_sql
+    value_rows = [
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1291, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 308, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 87, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 323, in generate_filename
+    filename = self.upload_to(instance, filename)
+  File "/home/mediacms.io/mediacms/files/models.py", line 89, in original_media_file_path
+    return settings.MEDIA_UPLOAD_DIR + "user/{0}/{1}".format(instance.user.username, file_name)
+AttributeError: 'Cat' object has no attribute 'user'
+Internal Server Error: /admin/files/cat/add/
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/base.py", line 933, in _do_insert
+    return manager._insert(
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1396, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1339, in as_sql
+    value_rows = [
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1291, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 308, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 87, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/fields/files.py", line 323, in generate_filename
+    filename = self.upload_to(instance, filename)
+  File "/home/mediacms.io/mediacms/files/models.py", line 89, in original_media_file_path
+    return settings.MEDIA_UPLOAD_DIR + "user/{0}/{1}".format(instance.user.username, file_name)
+AttributeError: 'Cat' object has no attribute 'user'
+Internal Server Error: /admin/files/cat/
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column files_cat.user_id does not exist
+LINE 1: ...cat"."id", "files_cat"."name", "files_cat"."uid", "files_cat...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1811, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/query.py", line 269, in __len__
+    self._fetch_all()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column files_cat.user_id does not exist
+LINE 1: ...cat"."id", "files_cat"."name", "files_cat"."uid", "files_cat...
+                                                             ^
+
+Internal Server Error: /admin/files/cat/
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column files_cat.user_id does not exist
+LINE 1: ...cat"."id", "files_cat"."name", "files_cat"."uid", "files_cat...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1811, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/query.py", line 269, in __len__
+    self._fetch_all()
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mediacms.io/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column files_cat.user_id does not exist
+LINE 1: ...cat"."id", "files_cat"."name", "files_cat"."uid", "files_cat...
+                                                             ^
+

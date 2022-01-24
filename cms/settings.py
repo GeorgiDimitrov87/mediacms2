@@ -479,3 +479,5 @@ if GLOBAL_LOGIN_REQUIRED:
         r'/accounts/logout/$',
         r'/accounts/signup/$',
     ]
+
+
